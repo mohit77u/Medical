@@ -1,0 +1,60 @@
+
+<section class="auth">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body register-card-body">
+            <p class="login-box-msg">Register a new membership</p>
+    
+            <form (ngSubmit)="onSubmit(registerForm)" #registerForm="ngForm">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Full name" name="name" ngModel>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fa fa-user"></span>
+                  </div>
+                </div>
+              </div>
+              <p class="text-danger pl-1" *ngIf="errors.name">{{errors.name}}</p>
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Email" name="email" ngModel>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fa fa-envelope"></span>
+                  </div>
+                </div>
+              </div>
+              <p class="text-danger pl-1" *ngIf="errors.email">{{errors.email}}</p>
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="Password" name="password" ngModel>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fa fa-lock"></span>
+                  </div>
+                </div>
+              </div>
+              <p class="text-danger pl-1" *ngIf="errors.password">{{errors.password}}</p>
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="Retype password" name="password_confirmation" ngModel>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fa fa-lock"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </div>
+              </div>
+            </form>
+            <div class="text-center already"><a routerLink="/login">I already have a membership</a></div>
+            
+          </div>
+          <!-- /.form-box -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

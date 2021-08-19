@@ -1,0 +1,221 @@
+<section class="admin">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="inner">
+                    <h4 class="text-center">Star Admin</h4>
+                    <div class="admin-details">
+                        <div class="admin-image"><img src="../assets/images/testimonials/testimonials-1.jpg" alt="admin"></div>
+                        <div class="admin-name">
+                            <p>{{user.name}}</p>
+                            <p>Founder</p>
+                        </div>
+                    </div>
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dashboard" type="button" role="tab" aria-selected="true"><i class="fa fa-laptop"></i>Dashboard</button>
+                        <button class="nav-link" id="v-pills-doctor-tab" data-bs-toggle="pill" data-bs-target="#v-pills-doctor" type="button" role="tab" aria-controls="v-pills-doctor" aria-selected="false"><i class="fa fa-user-md"></i>Doctors</button>
+                        <button class="nav-link" id="v-pills-patients-tab" data-bs-toggle="pill" data-bs-target="#v-pills-patients" type="button" role="tab" aria-controls="v-pills-patients" aria-selected="false"><i class="fa fa-user-o"></i>Patients</button>
+                        <button class="nav-link" id="v-pills-appointments-tab" data-bs-toggle="pill" data-bs-target="#v-pills-appointments" type="button" role="tab" aria-controls="v-pills-appointments" aria-selected="false"><i class="fa fa-rocket"></i>Appointments</button>
+                        <button class="nav-link" id="v-pills-contact-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contact" type="button" role="tab" aria-controls="v-pills-contact" aria-selected="false"><i class="fa fa-phone"></i>Change Password</button>
+                        
+                        <a routerLink='/logout'><button class="nav-link"><i class="fa fa-sign-out"></i>Logout</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-dashboard" role="tabpanel">
+                        <h3 class="text-center">Admin (Dashboard)</h3>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="dashboard-col">
+                                    <i class="fa fa-cube text-danger"></i>
+                                    <div class="col-details">
+                                        <h6>Total Doctors</h6>
+                                        <p>1000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="dashboard-col">
+                                    <i class="fa fa-file-text-o text-warning"></i>
+                                    <div class="col-details">
+                                        <h6>Total Patients</h6>
+                                        <p>2000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="dashboard-col">
+                                    <i class="fa fa-archive text-success"></i>
+                                    <div class="col-details">
+                                        <h6>Total Appointments</h6>
+                                        <p>500</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="table-details">
+                                    <h5 class="text-center">Doctors</h5>
+                                    <div class="text-center">
+                                        <table>
+                                            <tr>
+                                                <th>S.NO</th>
+                                                <th>Doctor name</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>dr name</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>doctor name</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>dr name</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="table-details">
+                                    <h5 class="text-center">Patients</h5>
+                                    <div class="text-center">
+                                        <table>
+                                            <tr>
+                                                <th>S.NO</th>
+                                                <th>Patient name</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>patient name</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>patient name</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>patient name</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-doctor" role="tabpanel" aria-labelledby="v-pills-doctor-tab">
+                        <h3 class="text-center">Admin (Doctors)</h3>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="table-details">
+                                    <table>
+                                        <tr>
+                                            <th>S.NO</th>
+                                            <th>ID.NO</th>
+                                            <th>Doctor Name</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>Specialist In</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1001</td>
+                                            <td>Dr. Name</td>
+                                            <td>test@xyz.com</td>
+                                            <td>+91 1234567890</td>
+                                            <td>Surgery</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>1002</td>
+                                            <td>Dr. Name</td>
+                                            <td>test@xyz.com</td>
+                                            <td>+91 1234567890</td>
+                                            <td>Surgery</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>1003</td>
+                                            <td>Dr. Name</td>
+                                            <td>test@xyz.com</td>
+                                            <td>+91 1234567890</td>
+                                            <td>Surgery</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>1004</td>
+                                            <td>Dr. Name</td>
+                                            <td>test@xyz.com</td>
+                                            <td>+91 1234567890</td>
+                                            <td>Surgery</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-patients" role="tabpanel" aria-labelledby="v-pills-patients-tab">
+
+                        <h3 class="text-center">Admin (Patient)</h3>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="table-details">
+                                    <table>
+                                        <tr>
+                                            <th>S.NO</th>
+                                            <th>ID.NO</th>
+                                            <th>Patient Name</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>Specialist In</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>1001</td>
+                                            <td>Patient Name</td>
+                                            <td>test@xyz.com</td>
+                                            <td>+91 1234567890</td>
+                                            <td>Surgery</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>1002</td>
+                                            <td>Dr. Name</td>
+                                            <td>test@xyz.com</td>
+                                            <td>+91 1234567890</td>
+                                            <td>Surgery</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>1003</td>
+                                            <td>Dr. Name</td>
+                                            <td>test@xyz.com</td>
+                                            <td>+91 1234567890</td>
+                                            <td>Surgery</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>1004</td>
+                                            <td>Dr. Name</td>
+                                            <td>test@xyz.com</td>
+                                            <td>+91 1234567890</td>
+                                            <td>Surgery</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> 
+
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-appointments" role="tabpanel" aria-labelledby="v-pills-appointments-tab">...</div>
+                    <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab">...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

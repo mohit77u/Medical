@@ -1,0 +1,47 @@
+
+<section class="auth">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="hold-transition login-page">
+          <div class="login-box">
+            <div class="card">
+              <div class="card-body login-card-body">
+                <p class="login-box-msg">Sign in to start your session</p>
+        
+                <form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
+                  <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Email" name="email" ngModel>
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fa fa-envelope"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Password" name="password" ngModel>
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fa fa-lock"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">
+                      <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                    </div>
+                    <!-- /.col -->
+                  </div>
+                </form>
+                <div class="text-center already"><a routerLink="/register">Register a new membership</a></div>
+                  
+              </div>
+              <!-- /.login-card-body -->
+            </div>
+          </div>
+          <!-- /.login-box -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
