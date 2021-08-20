@@ -1,5 +1,4 @@
 # Angular-and-Laravel-with-all-api
-Config files for my GitHub profile.
 
 Installation
 
